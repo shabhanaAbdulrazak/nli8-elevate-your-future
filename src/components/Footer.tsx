@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-              Ni8 Mentor
+              Nli8 Mentor
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Empowering Students. Shaping Careers. Where education meets opportunity,
@@ -102,10 +102,10 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <Mail className="h-5 w-5 text-primary mt-0.5" />
                 <a
-                  href="mailto:sales@ni8mentor.in"
+                  href="mailto:sales@nli8mentor.in"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  sales@ni8mentor.in
+                  sales@nli8mentor.in
                 </a>
               </li>
               <li className="flex items-start space-x-3">
@@ -114,19 +114,20 @@ const Footer = () => {
                   href="tel:+919876543210"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  +91 98765 43210
+                  +91 63790 88867
                 </a>
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5" />
-                <span className="text-muted-foreground">Tamil Nadu, India</span>
+                <span className="text-muted-foreground">No : 8/13, PILLAYAR KOIL STREET, Pammal, Chennai,
+Chengalpattu, Tamil Nadu, 600075</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Ni8 Mentor. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Nli8 Mentor. All rights reserved.</p>
         </div>
       </div>
     </footer>

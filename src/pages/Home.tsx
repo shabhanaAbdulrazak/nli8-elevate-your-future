@@ -81,7 +81,7 @@ const Home = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-              Ni8 Mentor bridges the gap between learning and employment,
+              Nli8 Mentor bridges the gap between learning and employment,
               transforming education into meaningful career opportunities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
@@ -169,7 +169,7 @@ const Home = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               Why Students & Partners{" "}
               <span className="bg-gradient-hero bg-clip-text text-transparent">
-                Choose Ni8 Mentor
+                Choose Nli8 Mentor
               </span>
             </h2>
           </div>
@@ -224,7 +224,7 @@ const Home = () => {
               </h2>
               <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
                 Join thousands of students who have launched successful careers
-                with Ni8 Mentor. Our team is ready to guide you every step of the
+                with Nli8 Mentor. Our team is ready to guide you every step of the
                 way.
               </p>
               <Button

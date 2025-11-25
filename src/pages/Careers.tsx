@@ -47,7 +47,6 @@ const Careers = () => {
       location: "Tamil Nadu, India",
       type: "Full-time",
       experience: "5+ years",
-      salary: "₹8-12 LPA",
       description:
         "We're looking for an experienced technical trainer to deliver high-quality training programs in programming, data science, and emerging technologies.",
       responsibilities: [
@@ -72,7 +71,6 @@ const Careers = () => {
       location: "Tamil Nadu, India",
       type: "Full-time",
       experience: "3+ years",
-      salary: "₹5-8 LPA",
       description:
         "Join our team as a career counselor to guide students in making informed career decisions and achieving their professional goals.",
       responsibilities: [
@@ -97,7 +95,6 @@ const Careers = () => {
       location: "Tamil Nadu, India",
       type: "Full-time",
       experience: "2-4 years",
-      salary: "₹4-6 LPA",
       description:
         "We need a dynamic placement coordinator to connect our students with leading companies and manage the entire placement process.",
       responsibilities: [
@@ -122,7 +119,6 @@ const Careers = () => {
       location: "Tamil Nadu, India / Remote",
       type: "Full-time",
       experience: "2-3 years",
-      salary: "₹4-7 LPA",
       description:
         "Create engaging educational content and course materials for various technical and soft skills programs.",
       responsibilities: [
@@ -147,9 +143,8 @@ const Careers = () => {
       location: "Tamil Nadu, India",
       type: "Full-time",
       experience: "1-3 years",
-      salary: "₹3-5 LPA + Incentives",
       description:
-        "Join our sales team to promote Ni8 Mentor's programs to students and educational institutions.",
+        "Join our sales team to promote Nli8 Mentor's programs to students and educational institutions.",
       responsibilities: [
         "Promote training programs to prospective students",
         "Conduct presentations at colleges and career fairs",
@@ -165,31 +160,30 @@ const Careers = () => {
         "Bachelor's degree in any field",
       ],
     },
-    {
-      id: 6,
-      title: "Digital Marketing Specialist",
-      department: "Marketing",
-      location: "Tamil Nadu, India / Remote",
-      type: "Full-time",
-      experience: "2-4 years",
-      salary: "₹4-7 LPA",
-      description:
-        "Lead our digital marketing efforts to attract students and build the Ni8 Mentor brand online.",
-      responsibilities: [
-        "Develop and execute digital marketing campaigns",
-        "Manage social media channels and content calendar",
-        "Optimize website for SEO and user experience",
-        "Track and analyze campaign performance metrics",
-        "Collaborate with content team for marketing materials",
-      ],
-      requirements: [
-        "2-4 years of experience in digital marketing",
-        "Proficiency in Google Ads, Facebook Ads, and analytics tools",
-        "Strong understanding of SEO and content marketing",
-        "Creative thinking and data-driven approach",
-        "Bachelor's degree in Marketing or related field",
-      ],
-    },
+    // {
+    //   id: 6,
+    //   title: "Digital Marketing Specialist",
+    //   department: "Marketing",
+    //   location: "Tamil Nadu, India / Remote",
+    //   type: "Full-time",
+    //   experience: "2-4 years",
+    //   description:
+    //     "Lead our digital marketing efforts to attract students and build the Nli8 Mentor brand online.",
+    //   responsibilities: [
+    //     "Develop and execute digital marketing campaigns",
+    //     "Manage social media channels and content calendar",
+    //     "Optimize website for SEO and user experience",
+    //     "Track and analyze campaign performance metrics",
+    //     "Collaborate with content team for marketing materials",
+    //   ],
+    //   requirements: [
+    //     "2-4 years of experience in digital marketing",
+    //     "Proficiency in Google Ads, Facebook Ads, and analytics tools",
+    //     "Strong understanding of SEO and content marketing",
+    //     "Creative thinking and data-driven approach",
+    //     "Bachelor's degree in Marketing or related field",
+    //   ],
+    // },
   ];
 
   return (
@@ -285,10 +279,10 @@ const Careers = () => {
                           <Clock className="h-4 w-4" />
                           {job.type}
                         </div>
-                        <div className="flex items-center gap-1">
+                        {/* <div className="flex items-center gap-1">
                           <DollarSign className="h-4 w-4" />
                           {job.salary}
-                        </div>
+                        </div> */}
                       </div>
                       <Badge variant="secondary">{job.experience}</Badge>
                     </div>
@@ -342,7 +336,7 @@ const Careers = () => {
 
                       <div className="pt-4">
                         <Button size="lg" asChild>
-                          <a href="mailto:sales@ni8mentor.in?subject=Application for ${job.title}">
+                          <a href="mailto:sales@nli8mentor.in?subject=Application for ${job.title}">
                             Apply Now
                           </a>
                         </Button>
@@ -369,7 +363,7 @@ const Careers = () => {
                 and let's talk about how you can contribute to our mission.
               </p>
               <Button size="lg" variant="secondary" asChild>
-                <a href="mailto:sales@ni8mentor.in">Send Your Resume</a>
+                <a href="mailto:sales@nli8mentor.in">Send Your Resume</a>
               </Button>
             </CardContent>
           </Card>

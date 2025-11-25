@@ -22,12 +22,19 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* <img src="../../assets/logo.png" alt="Nli8 Mentor Logo" /> */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="text-4xl font-bold  bg-gradient-hero bg-clip-text text-transparent">
-              Nli8 
-            </div>
-          </Link>
+          <div className="flex items-center space-x-3">
+  <img
+    src="src\asset\logo.png"
+    alt="Nli8 Mentor Logo"
+    className="w-28 h-28 object-contain"   // ← Reduced size
+  />
+
+  <Link to="/" className="flex items-center">
+    <span className="text-3xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+      Nli8
+    </span>
+  </Link>
+</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">

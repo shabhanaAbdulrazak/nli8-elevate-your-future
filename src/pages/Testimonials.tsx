@@ -1,5 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Quote, Star, Briefcase, GraduationCap, Building2 } from "lucide-react";
+import Testimonial1 from "@/asset/Testimonial1.mp4";
+import Testimonial2 from "@/asset/Testimonial2.mp4";
+import Testimonial3 from "@/asset/Testimonial3.mp4";
+
 
 const Testimonials = () => {
   const testimonials = [
@@ -9,7 +13,7 @@ const Testimonials = () => {
       company: "Tech Company",
       image: GraduationCap,
       rating: 5,
-      text: "Ni8 Mentor's placement training transformed my interview skills completely. Within two months of completing the program, I landed my dream job at a top tech company. The mock interviews and personalized feedback were game-changers.",
+      text: "Nli8 Mentor's placement training transformed my interview skills completely. Within two months of completing the program, I landed my dream job at a top tech company. The mock interviews and personalized feedback were game-changers.",
     },
     {
       name: "Anjali",
@@ -25,7 +29,7 @@ const Testimonials = () => {
       company: "Fortune 500 Company",
       image: Building2,
       rating: 5,
-      text: "Ni8 Mentor students consistently demonstrate exceptional preparedness and professionalism. Their training programs produce graduates who are truly job-ready from day one. We've hired over 5+ Ni8 Mentor alumni.",
+      text: "Nli8 Mentor students consistently demonstrate exceptional preparedness and professionalism. Their training programs produce graduates who are truly job-ready from day one. We've hired over 5+ Nli8 Mentor alumni.",
     },
     {
       name: "Priya Sharma",
@@ -41,7 +45,7 @@ const Testimonials = () => {
       company: "Startup",
       image: GraduationCap,
       rating: 5,
-      text: "The internship program provided by Ni8 Mentor gave me hands-on experience that made all the difference. I learned more in those 3 months than I did in years of theoretical study. Highly recommended for serious learners.",
+      text: "The internship program provided by Nli8 Mentor gave me hands-on experience that made all the difference. I learned more in those 3 months than I did in years of theoretical study. Highly recommended for serious learners.",
     },
     {
       name: "Sneha Patel",
@@ -108,7 +112,7 @@ const Testimonials = () => {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Real experiences from students who transformed their careers with Ni8 Mentor
+              Real experiences from students who transformed their careers with Nli8 Mentor
             </p>
           </div>
 
@@ -163,53 +167,83 @@ const Testimonials = () => {
       </section>
 
       {/* Video Testimonials Section */}
-      <section className="py-20 px-4 bg-muted/50">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              More{" "}
-              <span className="bg-gradient-hero bg-clip-text text-transparent">
-                Success Stories
-              </span>
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Join thousands of students who have transformed their careers
-            </p>
-          </div>
+   <section className="py-20 px-4 bg-muted/50">
+  <div className="container mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        More{" "}
+        <span className="bg-gradient-hero bg-clip-text text-transparent">
+          Success Stories
+        </span>
+      </h2>
+      <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+        Join thousands of students who have transformed their careers
+      </p>
+    </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <Card className="border-none shadow-lg">
-              <CardContent className="p-8 space-y-4">
-                <Briefcase className="h-12 w-12 text-secondary" />
-                <h3 className="text-2xl font-bold">From Campus to Corporate</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Watch how our students transition seamlessly from college campuses
-                  to corporate boardrooms, armed with the skills and confidence that
-                  Ni8 Mentor instills in every graduate.
-                </p>
-                <div className="text-sm text-primary font-medium">
-                  Average salary increase: 40%
-                </div>
-              </CardContent>
-            </Card>
+    {/* Video Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
+      
+      <Card className="border-none shadow-lg overflow-hidden">
+        <CardContent className="p-0">
+         <video className="w-full h-64 md:h-80 rounded-md" controls>
+            <source src={Testimonial3} type="video/mp4" />
+         </video>
+        </CardContent>
+      </Card>
 
-            <Card className="border-none shadow-lg">
-              <CardContent className="p-8 space-y-4">
-                <GraduationCap className="h-12 w-12 text-accent" />
-                <h3 className="text-2xl font-bold">Career Transformation</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Discover stories of students who completely changed their career
-                  trajectories with our expert guidance, mentorship, and
-                  comprehensive training programs.
-                </p>
-                <div className="text-sm text-primary font-medium">
-                  Career switch success rate: 78%
-                </div>
-              </CardContent>
-            </Card>
+      <Card className="border-none shadow-lg overflow-hidden">
+        <CardContent className="p-0">
+         <video className="w-full h-64 md:h-80 rounded-md" controls>
+               <source src={Testimonial2} type="video/mp4" />
+        </video>
+        </CardContent>
+      </Card>
+
+      <Card className="border-none shadow-lg overflow-hidden">
+        <CardContent className="p-0">
+         <video className="w-full h-64 md:h-80 rounded-md" controls>
+            <source src={Testimonial1} type="video/mp4" />
+         </video>
+        </CardContent>
+      </Card>
+
+    </div>
+
+    {/* Info Cards */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <Card className="border-none shadow-lg">
+        <CardContent className="p-8 space-y-4">
+          <Briefcase className="h-12 w-12 text-secondary" />
+          <h3 className="text-2xl font-bold">From Campus to Corporate</h3>
+          <p className="text-muted-foreground leading-relaxed">
+            Watch how our students transition seamlessly from college campuses
+            to corporate boardrooms, armed with the skills and confidence
+            Nli8 Mentor builds.
+          </p>
+          <div className="text-sm text-primary font-medium">
+            Average salary increase: 40%
           </div>
-        </div>
-      </section>
+        </CardContent>
+      </Card>
+
+      <Card className="border-none shadow-lg">
+        <CardContent className="p-8 space-y-4">
+          <GraduationCap className="h-12 w-12 text-accent" />
+          <h3 className="text-2xl font-bold">Career Transformation</h3>
+          <p className="text-muted-foreground leading-relaxed">
+            Real stories of students who switched careers successfully with
+            our structured roadmap & expert guidance.
+          </p>
+          <div className="text-sm text-primary font-medium">
+            Career switch success rate: 78%
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+  </div>
+</section>
+
 
       {/* Call to Action */}
       <section className="py-20 px-4">
@@ -220,7 +254,7 @@ const Testimonials = () => {
                 Ready to Write Your Success Story?
               </h2>
               <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-                Join Ni8 Mentor today and become part of our growing community of
+                Join Nli8 Mentor today and become part of our growing community of
                 successful professionals.
               </p>
               <a

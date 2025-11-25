@@ -234,35 +234,41 @@ const Placement = () => {
       </section>
 
       {/* Partner Companies */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Our{" "}
-              <span className="bg-gradient-hero bg-clip-text text-transparent">
-                Hiring Partners
-              </span>
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              We work with leading companies across industries
-            </p>
+    {/* Partner Companies */}
+<section className="py-20 px-4">
+  <div className="container mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        Our{" "}
+        <span className="bg-gradient-hero bg-clip-text text-transparent">
+          Hiring Partners
+        </span>
+      </h2>
+      <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+        We work with leading companies across industries
+      </p>
+    </div>
+
+    {/* Sliding Logo Carousel */}
+    <div className="overflow-hidden py-4">
+      <div className="flex space-x-6 animate-slide">
+
+        {[...companies, ...companies].map((company, index) => (
+          <div
+            key={index}
+            className="min-w-[150px] px-6 py-4 bg-white shadow-md rounded-xl flex items-center justify-center"
+          >
+            <span className="text-lg font-semibold text-muted-foreground">
+              {company}
+            </span>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
-            {companies.map((company, index) => (
-              <Card
-                key={index}
-                className="border-none shadow-md hover:shadow-lg transition-all duration-300"
-              >
-                <CardContent className="p-8 flex items-center justify-center">
-                  <span className="text-lg font-semibold text-muted-foreground">
-                    {company}
-                  </span>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+        ))}
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* CTA Section */}
       <section className="py-20 px-4 bg-muted/50">

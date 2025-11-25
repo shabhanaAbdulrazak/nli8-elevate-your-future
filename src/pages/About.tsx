@@ -54,7 +54,7 @@ const About = () => {
       <section className="py-20 px-4 bg-gradient-hero text-white">
         <div className="container mx-auto text-center space-y-6">
           <h1 className="text-5xl md:text-6xl font-bold animate-fade-in">
-            About Ni8 Mentor
+            About Nli8 Mentor
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/90">
             Transforming Education into Career Success
@@ -72,7 +72,7 @@ const About = () => {
                 <h2 className="text-4xl font-bold">Our Mission</h2>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Ni8 Mentor is revolutionizing how students transition from education
+                Nli8 Mentor is revolutionizing how students transition from education
                 to employment. We combine cutting-edge technology with personalized
                 mentorship to deliver quality education, skill enhancement, and
                 comprehensive career guidance.
@@ -118,7 +118,7 @@ const About = () => {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide everything we do at Ni8 Mentor
+              The principles that guide everything we do at Nli8 Mentor
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -46,31 +46,31 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      content: "sales@ni8mentor.in",
-      link: "mailto:sales@ni8mentor.in",
+      content: "sales@nli8mentor.in",
+      link: "mailto:sales@nli8mentor.in",
       color: "text-primary",
     },
     {
       icon: Phone,
       title: "Call Us",
-      content: "+91 98765 43210",
-      link: "tel:+919876543210",
+      content: "+91 63790 88867",
+      link: "tel:+916379088867",
       color: "text-secondary",
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      content: "Tamil Nadu, India",
+      content: "No : 8/13, PILLAYAR KOIL STREET, Pammal, Chennai,Chengalpattu, Tamil Nadu, 600075",
       link: "#",
       color: "text-accent",
     },
-    {
-      icon: Clock,
-      title: "Business Hours",
-      content: "Mon-Sat: 9AM - 6PM",
-      link: "#",
-      color: "text-primary",
-    },
+    // {
+    //   icon: Clock,
+    //   title: "Business Hours",
+    //   content: "Mon-Sat: 9AM - 6PM",
+    //   link: "#",
+    //   color: "text-primary",
+    // },
   ];
 
   return (
@@ -90,7 +90,7 @@ const Contact = () => {
       {/* Contact Info Cards */}
       <section className="py-16 px-4 bg-muted/50">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {contactInfo.map((info, index) => {
               const Icon = info.icon;
               return (
@@ -213,7 +213,7 @@ const Contact = () => {
                 <CardContent className="p-8 space-y-6">
                   <MessageSquare className="h-12 w-12 text-primary" />
                   <h3 className="text-2xl font-bold">
-                    Why Choose Ni8 Mentor?
+                    Why Choose Nli8 Mentor?
                   </h3>
                   <ul className="space-y-4 text-muted-foreground">
                     <li className="flex items-start gap-2">
